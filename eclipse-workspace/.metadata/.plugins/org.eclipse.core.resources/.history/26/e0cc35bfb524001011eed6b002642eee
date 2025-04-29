@@ -1,0 +1,29 @@
+package com.ibm.strings;
+
+class Eye{
+	String color;
+	float power;
+}
+
+class HumanEye extends Eye{
+	
+}
+
+class Human{
+	public Eye leftEye,rightEye;
+	public Human() {
+		leftEye = new HumanEye();
+		rightEye= new HumanEye();
+	}
+}
+class Man extends Human{
+	
+}
+public class Application
+{
+	public static void main( String[] args )
+	{
+		Man man = new Man();
+		
+	}
+}
